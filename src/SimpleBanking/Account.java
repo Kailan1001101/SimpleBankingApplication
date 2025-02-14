@@ -2,9 +2,11 @@ package SimpleBanking;
 
 abstract class Account {
 
+
     private String accountNumber;
     private String accountHolder;
     private double balance;
+
 
 
     public Account(String accountNumber, String accountHolder, double initialBalance) {
@@ -29,6 +31,7 @@ abstract class Account {
     public abstract void withdraw(double amount);
     public abstract void calculateInterest();
 
+
     public void setBalance(double balance) {
         this.balance = balance;
     }
@@ -39,3 +42,4 @@ abstract class Account {
     }
 
 }
+
