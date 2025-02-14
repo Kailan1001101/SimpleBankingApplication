@@ -29,6 +29,10 @@ abstract class Account {
     public abstract void withdraw(double amount);
     public abstract void calculateInterest();
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
     @Override
     public String toString(){
         return "Account Number: "+ accountNumber+", Holder: "+accountHolder+", Balance: "+balance;
